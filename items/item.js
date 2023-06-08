@@ -1,3 +1,27 @@
+export const scannableitem = [
+    
+    {
+        "id": "w8LJ",
+        "Nama": "Buah Naga",
+        "Gambar": "https://nourishindonesia.com/image/cache/catalog/5496-550x550.jpg"
+    },
+    {
+        "id": "Du12",
+        "Nama": "Mangga",
+        "Gambar": "https://www.astronauts.id/blog/wp-content/uploads/2023/04/Manfaat-Kesehatan-Buah-Mangga-yang-Mungkin-Belum-Kamu-Ketahui.jpg"
+    },
+    {
+        "id": "2vaX",
+        "Nama": "Pepaya",
+        "Gambar": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2018/05/18/1528467099.jpg"
+    },
+    {
+        "id": "GWHa",
+        "Nama": "Tomat",
+        "Gambar": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2018/05/18/1528467099.jpg"
+    },
+
+];
 
 export const item = [
     {
