@@ -1,7 +1,7 @@
 import Users from "../models/UserModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { item, popItem }  from "../items/item.js";
+import { item, popItem, scannableitem }  from "../items/item.js";
 
 
 export const getUsers = async(req, res) => {
@@ -117,6 +117,12 @@ export const Login = async(req, res) => {
 export const populeritems = async(req, res) => {
 
     res.status(200).json({ popItem });
+
+};
+
+export const scanitem = async(req, res) => {
+
+    res.status(200).json({ scannableitem });
 
 };
 
