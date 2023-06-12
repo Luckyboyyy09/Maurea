@@ -1,10 +1,4 @@
 runtime: nodejs18
 
-env_variables:
-  DB_ROOT_CERT: certs/server-ca.pem
-  DB_CERT: certs/client-cert.pem
-  DB_KEY: certs/client-key.pem
-  PRIVATE_IP: TRUE
-
 vpc_access_connector:
   name: projects/maurea-project-test/locations/asia-southeast2/connectors/appengine-sql-connector 
