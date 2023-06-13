@@ -1,5 +1,5 @@
 import express from 'express';
-import { getUsers, Register, Login, Logout, allitems, populeritems, scanitem } from '../controllers/Users.js';
+import { getUsers, Register, Login, Logout, allitems, populeritems, scanitem, resetPassword } from '../controllers/Users.js';
 import { verifyToken } from '../middleware/VerifyToken.js';
 import { refershToken } from '../controllers/RefreshToken.js';
 
