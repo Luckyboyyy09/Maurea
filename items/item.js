@@ -7,18 +7,18 @@ export const scannableitem = [
     },
     {
         "id": "Du12",
-        "Nama": "Mangga",
-        "Gambar": "https://www.astronauts.id/blog/wp-content/uploads/2023/04/Manfaat-Kesehatan-Buah-Mangga-yang-Mungkin-Belum-Kamu-Ketahui.jpg"
-    },
-    {
-        "id": "2vaX",
         "Nama": "Pepaya",
         "Gambar": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2018/05/18/1528467099.jpg"
     },
     {
+        "id": "2vaX",
+        "Nama": "Semangka",
+        "Gambar": "https://doktersehat.com/wp-content/uploads/2018/12/manfaat-semangka-doktersehat-1.jpg"
+    },
+    {
         "id": "GWHa",
         "Nama": "Tomat",
-        "Gambar": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2018/05/18/1528467099.jpg"
+        "Gambar": "https://i0.wp.com/resepkoki.id/wp-content/uploads/2018/11/tomat-biasa.jpg?fit=827%2C580&ssl=1"
     },
 
 ];
