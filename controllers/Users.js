@@ -114,6 +114,39 @@ export const Login = async(req, res) => {
     }
 };
 
+export const resetPassword = async(req, res) => {
+    try {
+        const { email, newPassword, confirmPassword } = req.body;
+
+        // Cari pengguna berdasarkan email
+        const user = await Users.findOne({ where: { email } });
+
+        // Cari pengguna berdasarkan email
+        if(!user) {
+            return res.status(404).json({ msg: "Email does not exist"});
+        };
+
+        // Cek apakah password baru dan konfirmasi password cocok
+        if (newPassword !== confirmPassword) {
+            return res.status(400).json({ msg: "Password do not match."});
+        };
+
+        // Buat hash dari password baru
+        const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+        // Update password pengguna di basis data
+        await Users.update(
+            { password: hashedPassword },
+            { where: { email } }
+        );
+
+        res.status(200).json({ msg: "Password reset successfully"});
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ msg: "Internet server error"});
+    }
+};
+
 export const populeritems = async(req, res) => {
 
     res.status(200).json({ popItem });
