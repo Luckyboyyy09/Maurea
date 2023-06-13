@@ -13,5 +13,7 @@ router.get('/fruits/popular', populeritems);
 router.get('/token', refershToken);
 router.get('/detection', scanitem)
 router.delete('/logout', Logout);
+router.post('resetPassword', resetPassword)
+
 
 export default router;
